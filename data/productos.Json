@@ -1,0 +1,43 @@
+
+[{
+    "id":1 ,
+   "nombre": "valkum",
+   "precio":  7040, 
+   "img": "img/1.jpg",
+   "cantidad": 1
+},
+{
+    "id":2 ,
+   "nombre": "loix",
+   "precio":4780, 
+   "img": "img/2.jpg",
+   "cantidad": 1
+},
+{
+    "id":3 ,
+   "nombre": "Philippe",
+   "precio": 5340, 
+   "img": "img/3.jpg",
+   "cantidad": 1
+},
+{
+    "id":4 ,
+   "nombre": "rolex",
+   "precio": 6770, 
+   "img": "img/4.jpg",
+   "cantidad": 1
+},
+{
+    "id":5 ,
+   "nombre": "casio ",
+   "precio": 9200, 
+   "img": "img/5.jpg",
+   "cantidad": 1
+},
+{
+    "id":6 ,
+   "nombre": "seger",
+   "precio": 10400, 
+   "img": "img/6.jpg",
+   "cantidad": 1
+}]

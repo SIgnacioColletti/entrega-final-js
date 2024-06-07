@@ -1,0 +1,337 @@
+*::after,
+*::before
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    top: 20px;
+    color: grey;
+    /* position:absolute; */
+    
+}
+img{
+    max-width: 100%;
+}
+/* estilos de header */
+header{
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0 ;
+    background-color: black;
+    width: 100%;
+    position: sticky;
+}
+.navbar-titulo{
+    
+    color:white;
+    margin: 25px;
+    
+}
+
+.carrito{
+    width: 50px;
+    height: 50px;
+    stroke: rgb(255, 253, 253);
+    filter: invert();
+    padding-right: 30px;
+}
+.carrito:hover{
+    cursor: pointer;
+
+}
+/* estilos del carrito */
+.container-icon {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 50vh;
+    color: white;
+    background-color: rgb(162, 162, 162);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.container-icon::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-content{
+    display: flex;
+    align-items: center;
+}
+.cart-header{
+    display: flex;
+    background-color: #0a0909;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+    position: sticky;
+}
+.cart-header-button{
+    color: white;
+    cursor: pointer;
+}
+
+.titulo-carrito{
+    justify-self: start;
+}
+.ventana-carrito{
+    position: relative;
+}
+.cantidad-carrito{
+    background-color: #9f9595;
+    color: rgb(224, 9, 9);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+
+.contenedor-carrito{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 400px;
+    z-index: 1;
+    box-sizing: 0 10px 20px black;
+    border-radius: 10px;
+}
+
+
+
+.productos-carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.94);
+    color: rgb(0, 0, 0);
+}
+.info-productos-carrito{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.94);
+    color: rgb(0, 0, 0);
+}
+.icon-close{
+    width: 50px;
+    height: 50px;
+}
+.icon-close:hover{
+    color: red;
+    cursor: pointer;
+}
+.titulo-producto-carrito{
+font-size: 20px;
+}
+.precio-producto-carrito{
+font-weight: 700;
+font-size: 20px;
+}
+.cantidad-producto-carrito{
+font-weight: 400;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 ;
+    gap: 20px;
+    color: black;
+}
+
+
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+    
+}
+
+/* /* ------------- estilos main  */
+ .contenedor-productos{
+    padding: 50px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+.card{
+text-align: center;
+}
+.card button:hover{
+    box-shadow: 0 10px 20px black;
+}
+
+.item{
+    border-radius: 10px;
+    
+}
+.item:hover{
+    box-shadow: 0 10px 20px black;
+}
+.info-producto{
+    padding:15px 30px;
+    line-height: .2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-producto{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+figure{
+    overflow: hidden;
+}
+
+.img-producto:hover{
+    transform: scale(1.2);
+    
+}
+h2{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.precio{
+    font-size: 18px;
+    font-weight: 900pxs;
+    color: black;
+    text-align: center;
+}
+
+.añadir-carrito{
+    border: none;
+    background:none;
+    background-color: black;
+    color: white;
+    padding:15px 10px;
+    cursor: pointer;
+}
+/* -------------------- estilos de carrito.html */
+.main-carrito{
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+.table{
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+  
+}
+.total{font-size: 20px;
+    font-weight: 900;
+    }
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    bottom: 0; /* Position at the bottom of the page */
+    width: 100%; /* Span the full width of the viewport */
+    z-index: 100
+      }
+.footer-carrito{
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    bottom: 0; /* Position at the bottom of the page */
+    width: 100%; /* Span the full width of the viewport */
+    z-index: 100
+}
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .footer-logo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .footer-logo-img {
+        width: 150px;
+        height: auto;
+      }
+      
+      .footer-navigation {
+        margin-left: 20px;
+      }
+      
+      .footer-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .footer-nav-list li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      .footer-nav-list a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+      }
+      
+      .footer-social-media {
+        margin-left: 20px;
+      }
+      
+      .footer-social-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .footer-social-list li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      
+      .footer-social-list a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;}
